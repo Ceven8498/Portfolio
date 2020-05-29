@@ -63,34 +63,24 @@ a:hover {
 }
 
 /*WHAT-I-DO*/
-.intro{
-    width: 75%;
-    display: inline-block;
+.content {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-between;
 }
-#content {
-    margin: 35px;
+.content h3 {
+    font-size: 42px
+}
+.step-text {
+    width: 80%;
     padding: 35px;
-    height: 65%;
-    width: 15%;
-    color: Black;
-    border-right: 5px solid black;
-}
-#main {
-    margin: 35px;
-    padding: 35px;
-    height: 65%;
-    width: 15%;
-    color: Black;
-    border-right: 5px solid black;
-}
-.content h2 {
-    font-size: 32px;
-    
-
-}
-#statement {
-    font-size: 18px;
-    display: inline-block
+    border-left: 3px solid black;
+    flex: 12;
 }
 .grid-container {
     display: grid;
