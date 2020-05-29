@@ -1,0 +1,137 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: lightgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+    margin: 50px;
+}
+
+/*HEADER*/
+header {
+    padding: 35px;
+    background-color: black;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    display: inline;
+}
+header nav {
+    float: right;
+    margin: 0px;
+}
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    margin: 0px;
+    padding: 25px;
+    font-weight: lighter;
+    font-size: 22px;
+    color: #ffffff;
+}
+a:hover {
+    background-color: lightgrey;
+    margin: auto;
+}
+/*HERO*/
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Codeheader.jpg");
+    height: 500px;
+    padding: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    color: white;
+}
+
+/*WHAT-I-DO*/
+.intro{
+    width: 75%;
+    display: inline-block;
+}
+#content {
+    margin: 35px;
+    padding: 35px;
+    height: 65%;
+    width: 15%;
+    color: Black;
+    border-right: 5px solid black;
+}
+#main {
+    margin: 35px;
+    padding: 35px;
+    height: 65%;
+    width: 15%;
+    color: Black;
+    border-right: 5px solid black;
+}
+.content h2 {
+    font-size: 32px;
+    
+
+}
+#statement {
+    font-size: 18px;
+    display: inline-block
+}
+.grid-container {
+    display: grid;
+    float: right;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+}
+  
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 35px;
+    background-color: aquamarine;
+}
+  
+.item-1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+.item-1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+.item-1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+.item-1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}
+.item-1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+}  
+.grid-item:nth-child(3n) {
+    grid-column: span 3;
+    grid-row: span 2;
+}
