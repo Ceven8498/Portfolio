@@ -111,15 +111,28 @@ a:hover {
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 20px;
 }
-.grid-item:hover {
-    opacity: 25%;
-}  
 .grid-item {
     display: flex;
     border: 5px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     font-size: 35px;
     height: 100%;
+}
+.grid-item:hover {
+    opacity: 25%;  
+}
+.tool {
+    display: flex;
+    margin-top: auto;
+    Font-size: 22px;
+    padding: 15px;
+    background-color: darkgray ;
+    text-align: center;
+}
+.grid-item p {
+    display: flex;
+    Font-size: 12px;
+    text-align: center;
 }  
 .item-1 {
     background-image: url("../images/mernplaceholder.jpg");
@@ -160,4 +173,21 @@ a:hover {
     background-size: cover;
     grid-column: 3 / span 1;
     grid-row: 3 / span 2;
-}  
+}
+/*BODY-OF-WORK GRID*/
+
+
+@media only screen and (max-width: 1024px) {
+body {
+    background-color: lightblue;
+}
+
+@media only screen and (max-width: 726px) {
+body {
+    background-color: lightblue;
+}
+
+@media only screen and (max-width: 400px) {
+body {
+    background-color: lightblue;
+}
