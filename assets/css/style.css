@@ -22,6 +22,10 @@ header h1 {
     margin: 0;
     display: inline;
 }
+@keyframes header {
+    from {background-color: lightgrey;}
+    to {background-color: red;}
+}
 header nav {
     float: right;
     margin: 0px;
@@ -43,6 +47,11 @@ header nav ul li a {
 a:hover {
     background-color: lightgrey;
     margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation-name: header;
+    animation-duration: 4s;
 }
 /*HERO*/
 .hero {
@@ -68,9 +77,6 @@ a:hover {
 #BODY-OF-WORK {
     flex: 1;
 }
-#CONTACT{
-    flex: 1;
-}
 .content {
     margin: 50px auto;
     width: 100%;
@@ -83,23 +89,23 @@ a:hover {
 .section-title {
     font-size: 64px;
     margin: 20px;
-    padding: 50px;
+    padding: 125px;
+    flex-basis: 20%;
+    border-right: 3px solid black;
     text-align: center;
+    flex: initial;
     display: flex;
-    flex:1;
 }
 .step-text {
     flex-basis: 80%;
     font-size: 24px;
     padding-left: 85px;
-    border-left: 3px solid black;
     flex: 2;
 }
 /*BODY-OF-WORK GRID*/
 .container {
     width: 80%;
     height: 500px;
-    border-left: 3px solid black;
     flex: 2;
     padding: 35px;
 }
@@ -174,7 +180,54 @@ a:hover {
     grid-column: 3 / span 1;
     grid-row: 3 / span 2;
 }
-/*BODY-OF-WORK GRID*/
+/*CONTACT ME*/
+#CONTACT{
+    flex: 2;
+    display: flex;
+}
+.con {
+    width: 80%;
+    height: 250px;
+    flex: 2;
+    padding: 35px;
+}
+.pho {
+    font-size: 32px;
+}
+.email {
+    font-size: 32px;
+}
+.github {
+    font-size: 32px;
+}
+.Resume {
+    font-size: 32px;
+}    
+.SocM {
+    font-size: 32px;
+}
+.fa {
+    display: flex;
+    order: 2;
+    flex-direction: row;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color:white
+}
 
 
 @media only screen and (max-width: 1024px) {
