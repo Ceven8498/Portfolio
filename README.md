@@ -2,7 +2,7 @@
 
 I took some visual liberities, but its all here.
 
-link text]https://ceven8498.github.io/portfolio/
+[link text]https://github.com/Ceven8498/Portfolio
 
 https://ceven8498.github.io/Portfolio/
 
